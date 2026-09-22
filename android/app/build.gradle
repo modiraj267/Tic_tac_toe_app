@@ -78,6 +78,11 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.tic_tac_toe_app"
+    
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
     defaultConfig {
         applicationId "com.tic_tac_toe_app"
         minSdkVersion rootProject.ext.minSdkVersion
